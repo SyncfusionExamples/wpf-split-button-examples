@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Split_Button_MenuItem_Binding", "Split_Button_MenuItem_Binding\Split_Button_MenuItem_Binding.csproj", "{D0CCF748-1C5F-4C69-A0E3-5C0E94FFA531}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0CCF748-1C5F-4C69-A0E3-5C0E94FFA531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0CCF748-1C5F-4C69-A0E3-5C0E94FFA531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0CCF748-1C5F-4C69-A0E3-5C0E94FFA531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0CCF748-1C5F-4C69-A0E3-5C0E94FFA531}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {707F5E7A-0508-40D4-B327-012E01E7773D}
+	EndGlobalSection
+EndGlobal
