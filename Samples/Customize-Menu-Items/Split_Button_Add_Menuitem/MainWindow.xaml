@@ -1,0 +1,108 @@
+﻿<Window x:Class="Split_Button_Menuitems.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Split_Button_Menuitems"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Setting icon and icon bar visbility"  FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+            <syncfusion:SplitButtonAdv Label="Country" x:Name="splitbutton" DropDirection="BottomRight" SizeMode="Normal" SmallIcon="Images\country.png">
+                <syncfusion:DropDownMenuGroup  IconBarEnabled="True">
+                    <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="India">
+                        <syncfusion:DropDownMenuItem.Icon>
+                            <Image Source="Images\india.png"/>
+                        </syncfusion:DropDownMenuItem.Icon>
+                    </syncfusion:DropDownMenuItem>
+                    <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="France"/>
+                    <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Germany"/>
+                </syncfusion:DropDownMenuGroup>
+            </syncfusion:SplitButtonAdv>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Setting scrollbar visibility" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+            <syncfusion:SplitButtonAdv Label="Country" DropDirection="BottomRight" SizeMode="Normal" SmallIcon="Images\country.png">
+                <syncfusion:DropDownMenuGroup MaxHeight="111" ScrollBarVisibility="Visible">
+                    <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="India">
+                        <syncfusion:DropDownMenuItem.Icon>
+                            <Image Source="Images/india.png"/>
+                        </syncfusion:DropDownMenuItem.Icon>
+                    </syncfusion:DropDownMenuItem>
+                    <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="France">
+                        <syncfusion:DropDownMenuItem.Icon>
+                            <Image Source="Images\france.png"/>
+                        </syncfusion:DropDownMenuItem.Icon>
+                    </syncfusion:DropDownMenuItem>
+                    <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Germany" >
+                        <syncfusion:DropDownMenuItem.Icon>
+                            <Image Source="Images\germany.png"/>
+                        </syncfusion:DropDownMenuItem.Icon>
+                    </syncfusion:DropDownMenuItem>
+                    <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Canada">
+                        <syncfusion:DropDownMenuItem.Icon>
+                            <Image Source="Images\canada.png"/>
+                        </syncfusion:DropDownMenuItem.Icon>
+                    </syncfusion:DropDownMenuItem>
+                    <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="China">
+                        <syncfusion:DropDownMenuItem.Icon>
+                            <Image Source="Images\china.png"/>
+                        </syncfusion:DropDownMenuItem.Icon>
+                    </syncfusion:DropDownMenuItem>
+                    <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="United States"/>
+                    <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Italy"/>
+                    <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Japan"/>
+                    <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Spain"/>
+                    <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Pakistan"/>
+                </syncfusion:DropDownMenuGroup>
+            </syncfusion:SplitButtonAdv>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Resizing dropdown menu" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+            <syncfusion:SplitButtonAdv Label="Country" SmallIcon="images\country.png">
+                <syncfusion:DropDownMenuGroup IsResizable="True">
+                    <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="India">
+                        <syncfusion:DropDownMenuItem.Icon>
+                            <Image Source="images\india.png"/>
+                        </syncfusion:DropDownMenuItem.Icon>
+                    </syncfusion:DropDownMenuItem>
+                    <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="France">
+                        <syncfusion:DropDownMenuItem.Icon>
+                            <Image Source="images\france.png"/>
+                        </syncfusion:DropDownMenuItem.Icon>
+                    </syncfusion:DropDownMenuItem>
+                    <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Germany">
+                        <syncfusion:DropDownMenuItem.Icon>
+                            <Image Source="images\germany.png"/>
+                        </syncfusion:DropDownMenuItem.Icon>
+                    </syncfusion:DropDownMenuItem>
+                </syncfusion:DropDownMenuGroup>
+            </syncfusion:SplitButtonAdv>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Checkable dropdown menu items"  FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+            <syncfusion:SplitButtonAdv Label="Country" DropDirection="BottomRight"  SizeMode="Normal" SmallIcon="Images\country.png">
+                <syncfusion:DropDownMenuGroup>
+                    <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="India" IsChecked="True" IsCheckable="True"/>
+                    <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="France" IsChecked="True" IsCheckable="True"/>
+                    <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Germany"/>
+                </syncfusion:DropDownMenuGroup>
+            </syncfusion:SplitButtonAdv>
+        </StackPanel>
+        
+    </Grid>
+</Window>
